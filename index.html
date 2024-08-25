@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Poker Chips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Poker Chips</h1>
+        <div id="playerSetup">
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <button onclick="addPlayer()">Join Game</button>
+        </div>
+        <div id="gameArea" style="display: none;">
+            <h2>Players</h2>
+            <ul id="playerList"></ul>
+            <div id="bettingArea">
+                <h2>Betting</h2>
+                <select id="betPlayer"></select>
+                <input type="number" id="betAmount" placeholder="Bet amount">
+                <button onclick="placeBet()">Place Bet</button>
+            </div>
+            <div id="potArea">
+                <h2>Pot: <span id="potAmount">0</span></h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
